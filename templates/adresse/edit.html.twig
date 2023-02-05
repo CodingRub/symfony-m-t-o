@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier une adresse{% endblock %}
+
+{% block body %}
+<div class="main">
+    <div class="main-box">
+        <div class="actual-meteo">
+            <div class="main-meteo">
+                <h1>{{ adresse.ville }}</h1>
+                <h3>{{ meteo[0][0]|format_datetime(locale='fr',pattern="dd MMM YYYY") }}</h3>
+            </div>
+            {% autoescape false %}
+                <div class="meteo">
+                    {{ meteo[0][1][1][0] }}
+                    <p class="temperature">{{ meteo[0][3] }}/{{ meteo[0][2] }}°C</p>
+                </div>
+            {% endautoescape %}
+            <div class="meteo-info">
+                <span class="site-api">Données reçues grâce à open-meteo.com</span>
+            </div>
+        </div>
+        <div class="form-container">
+             <div class="adrHeader">
+                <h3>Mise à jour d'une adresse</h3>
+                <div class="action">
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <a class="link" href="{{ path('app_admin_dashboard') }}">
+                            <span class="material-symbols-outlined">admin_panel_settings</span>
+                        </a>
+                    {% endif %}
+                    <a class="link" href="{{ path('app_home') }}"><span class="material-symbols-outlined">home</span></a>
+                    <a class="link" href="{{ path('app_logout') }}"><span class="material-symbols-outlined">logout</span></a>
+                </div>
+            </div>
+                {{ form_start(form, {'attr': {'class': 'adrF'}}) }}
+                    <div class="body-form">
+                        {{ form_row(form.adresse) }}
+                        <ul class="result"></ul>
+                        <div class="row">
+                            <div class="col">
+                                {{ form_row(form.ville, {'attr': {'class': 'ville-input'}, 'label': 'Ville'}) }}
+                                {{ form_row(form.cp, {'attr': {'class': 'cp-input'}, 'label': 'Code postal'}) }}
+                            </div>
+                            <div class="col left">
+                                {{ form_row(form.latitude) }}
+                                {{ form_row(form.longitude) }}
+                            </div>
+                        </div>
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <div class="row">
+                                {{ form_row(form.author) }}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <button type="submit" class="btn">Mise à jour</button>
+                {{ form_end(form) }}
+        </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/autocompletion.js') }}"></script>
+{% endblock %}

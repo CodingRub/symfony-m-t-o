@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #63DCFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%2363DCFF'/%3E%3Cstop offset='1' stop-color='%23A66AFF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+
+.main-box {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    width: 80%;
+    height: 80%;
+    padding: 20px 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.6);
+}
+
+.actual-meteo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 2px solid black;
+}
+
+.actual-meteo h1 {
+    width: 200px;
+    font-size: 2rem;
+}
+
+.main-meteo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.meteo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meteo .material-symbols-outlined {
+    font-size: 4rem;
+}
+
+.grid-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-element .material-symbols-outlined {
+    font-size: 3rem;
+}
+
+.grid-element .desc {
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.actual-meteo .maj {
+    font-size: 0.5rem;
+}
+
+.actual-meteo .site-api {
+    font-size: 0.5rem;
+}
+
+.temperature {
+    font-size: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    width: 450px;
+}
+
+.meteo-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+    width: 100%;
+}
+
+
+.btn {
+    background: deepskyblue;
+    padding: 10px 30px;
+    width: 300px;
+    margin: 20px 0;
+    text-decoration: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2)
+}
+
+.grid-element p {
+    font-size: 0.7rem;
+}
+
+.form-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+}
+
+.form-adr form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.form-login label {
+    text-align: left;
+}
+
+.form-login div {
+    text-align: left;
+}
+
+.form-login input {
+    padding: 5px 10px;
+    width: 300px;
+}
+
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.form-register div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    margin: 10px 0;
+}
+
+
+
+.form button {
+    margin: 30px 0;
+}
+
+.result {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100px;
+    overflow: auto;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: flex-end;
+}
+
+.right {
+    display: flex;
+    align-items: flex-start;
+}
+
+.adrF {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.adrF div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.result li {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,1);
+}
+
+
+
+.adresse-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+    width: 100%;
+}
+
+.adrHeader h3 {
+    font-size: 2rem;
+}
+
+.adrHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adrHeader a {
+    color: black;
+}
+
+.adrHeader .material-symbols-outlined {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+
+.link:hover{
+    color: #eee1e1;
+}
+
+.adresse-element {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+}
+
+.adrLst {
+    margin-top: 20px;
+    max-height: 100%;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.adresse-element a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.meteo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actual-meteo a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.link-texte-1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.regF {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.regF div {
+    margin: 0;
+}
+
+.regF input, select {
+    padding: 5px 10px;
+    width: 300px;
+}
+
+.regF select {
+    height: 50px;
+}
+
+.link-texte {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-around;
+}
+
+.row .col {
+    width: 80%;
+}
+
+.row .col div {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.body-form input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+}
+
+.row .col div input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label {
+    margin: 10px 0;
+}
